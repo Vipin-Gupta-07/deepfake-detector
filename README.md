@@ -262,9 +262,4 @@ Classify an uploaded image.
 - For high-throughput scenarios, consider batching requests or using TorchServe.
 
 ---
-## References
 
-1. Anand S., Gupta V., Gupta A. — *Optimized Preprocessing with Deep Learning for Robust Low-Quality Deepfake Image Detection*, 2024
-2. Dosovitskiy et al. — *An Image is Worth 16×16 Words*, ICLR 2021
-3. Zhang et al. — *MTCNN: Joint Face Detection and Alignment*, IEEE SPL 2016
-4. Wightman R. — *PyTorch Image Models (TIMM)*, GitHub 2020
