@@ -45,7 +45,7 @@ deepfake-detector/
 ## 1 — Clone / Download
 
 ```bash
-git clone https://github.com/Vipin-Gupta-07/deepfake-detector.git
+git clone <https://github.com/Vipin-Gupta-07/deepfake-detector.git>
 cd deepfake-detector
 ```
 
