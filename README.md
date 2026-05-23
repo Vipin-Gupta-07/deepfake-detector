@@ -262,7 +262,6 @@ Classify an uploaded image.
 - For high-throughput scenarios, consider batching requests or using TorchServe.
 
 ---
-
 ## References
 
 1. Anand S., Gupta V., Gupta A. — *Optimized Preprocessing with Deep Learning for Robust Low-Quality Deepfake Image Detection*, 2024
