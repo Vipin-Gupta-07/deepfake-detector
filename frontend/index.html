@@ -764,7 +764,7 @@
 
   <script>
     // ── Config ─────────────────────────────────────────────────────
-    const API_BASE = "http://localhost:8000";
+    const API_BASE = "https://vipingupta04-deepfake-detector.hf.space";
 
     // ── State ──────────────────────────────────────────────────────
     let currentFile = null;
@@ -860,7 +860,7 @@
         setResultState("idle");
         showError(
           err.message.includes("fetch")
-            ? "Cannot reach the backend server. Make sure it is running on localhost:8000."
+            ? "Cannot reach the backend server. The API may be starting up — please try again in a minute."
             : err.message
         );
       }
