@@ -12,7 +12,7 @@ Fake Faces dataset using:
 - **ViT-B/16** pretrained on ImageNet-21k (via TIMM) for binary classification
 - Two-phase fine-tuning with cosine-annealing LR and class-weighted loss
 
----
+-------------
 
 ## Directory Structure
 
