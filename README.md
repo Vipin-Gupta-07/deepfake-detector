@@ -14,6 +14,15 @@ Fake Faces dataset using:
 
 -------------
 
+## 🚀 Live Demo & Deployment
+
+| Service | URL | Platform |
+|---------|-----|----------|
+| **Frontend Web App** | [https://vipin-gupta-07.github.io/deepfake-detector/](https://vipin-gupta-07.github.io/deepfake-detector/) | GitHub Pages |
+| **Backend API**      | [https://vipingupta04-deepfake-detector.hf.space/](https://vipingupta04-deepfake-detector.hf.space/) | Hugging Face Spaces |
+
+-------------
+
 ## Directory Structure
 
 ```
@@ -192,15 +201,25 @@ python -m http.server 3000
 
 ## 4 — Using the Application
 
-1. Open **http://localhost:3000** (or the `index.html` file directly)
-2. Drag-and-drop or click to upload a facial image (JPEG/PNG/WebP/BMP, ≤ 15 MB)
-3. The frontend sends the image to `http://localhost:8000/predict`
-4. Results appear with:
-   - **REAL / FAKE** verdict
-   - Confidence percentage
-   - Real vs. Fake probability bars
-   - Face detection status (MTCNN found face vs. fallback)
-   - Server latency in milliseconds
+### Option A: Using the Live Deployed App (Default)
+1. Open the live frontend at **https://vipin-gupta-07.github.io/deepfake-detector/**.
+2. Drag-and-drop or click to upload a facial image (JPEG/PNG/WebP/BMP, ≤ 15 MB).
+3. The frontend automatically sends the image to the live API backend at `https://vipingupta04-deepfake-detector.hf.space/predict`.
+4. Results appear instantly with the classification metrics.
+
+### Option B: Running the Entire Stack Locally
+1. Start the local backend server (as described in **2.5**).
+2. Open [frontend/index.html](file:///c:/Users/vipin/Downloads/deepfake-detector/frontend/index.html) in your editor and change the `API_BASE` variable back to `"http://localhost:8000"` (it is currently pointed to the Hugging Face Space).
+3. Open **http://localhost:3000** (or double-click the `index.html` file to open it directly).
+4. Drag-and-drop or click to upload an image to analyze it on your local server.
+
+### Results Analysis
+For both options, results appear with:
+- **REAL / FAKE** verdict
+- Confidence percentage
+- Real vs. Fake probability bars
+- Face detection status (MTCNN found face vs. fallback)
+- Server latency in milliseconds
 
 ---
 
