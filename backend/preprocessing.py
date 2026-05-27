@@ -68,6 +68,7 @@ class FacePreprocessor:
             keep_all=False,
             device=self.device,
             post_process=False,   # we handle normalisation ourselves
+            min_face_size=80,     # optimized: skip searching for tiny faces
         )
 
         logger.info(

@@ -155,7 +155,8 @@ def predict(
         fake_prob   – probability of *Fake*
     """
     tensor = tensor.to(device)
-    prob_fake: float = model(tensor).squeeze().item()   # scalar in [0,1]
+    with torch.autocast(device_type=device.type, enabled=(device.type == "cuda")):
+        prob_fake: float = model(tensor).squeeze().item()   # scalar in [0,1]
     prob_real: float = 1.0 - prob_fake
 
     label = "Fake" if prob_fake >= threshold else "Real"

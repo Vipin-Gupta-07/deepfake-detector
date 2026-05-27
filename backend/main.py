@@ -59,6 +59,10 @@ async def lifespan(app: FastAPI):
     logger.info("Using device: %s", device)
 
     _state["device"]       = device
+    if device.type == "cpu":
+        num_threads = min(4, os.cpu_count() or 1)
+        torch.set_num_threads(num_threads)
+        logger.info("PyTorch CPU threads set to: %d", num_threads)
     _state["model"]        = load_model(device=device)
     _state["preprocessor"] = FacePreprocessor(device=device)
 
