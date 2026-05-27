@@ -21,7 +21,7 @@ Fake Faces dataset using:
 | **Frontend Web App** | [https://vipin-gupta-07.github.io/deepfake-detector/](https://vipin-gupta-07.github.io/deepfake-detector/) | GitHub Pages |
 | **Backend API**      | [https://vipingupta04-deepfake-detector.hf.space/](https://vipingupta04-deepfake-detector.hf.space/) | Hugging Face Spaces |
 
--------------
+---------------------
 
 ## Directory Structure
 
