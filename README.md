@@ -1,4 +1,4 @@
-# DeepScan — Deepfake Image Detection System
+# DeepScan — Deepfake Image Detection System.
 
 A full-stack web application for detecting deepfake facial images, built on the
 methodology from:
