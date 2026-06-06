@@ -172,7 +172,7 @@ INFO  | Model ready on device=cpu
 INFO  | === API ready ===
 ```
 
-Interactive API docs available at → **http://localhost:8000/docs**
+
 
 ---
 
